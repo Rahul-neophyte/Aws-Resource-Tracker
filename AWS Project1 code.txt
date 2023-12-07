@@ -32,7 +32,3 @@ aws iam list-users >> resourceTracker
 # AWS LAMBDA users listing
 echo "Print list of Lambda Users"
 aws lambda list-functions >> resourceTracker
-
-####################################################################################################
-
-output
