@@ -1,0 +1,38 @@
+#!/bin/bash
+
+##################################################
+
+# Author - Rahul
+# Date - 7th DEC-2023
+#
+# Version: V1
+#
+# This Script will reprt the AWS Resource Usage
+#################################################
+
+set -x
+
+# AWS S3
+# AWS EC2
+# AWS IAM
+# AWS LAMBDA
+
+# AWS S3 bucket Listing
+echo "Print list of S3 buckets"
+aws s3 ls > resourceTracker
+
+#AWS EC2 instances listing
+echo "Print list of EC2 instances"
+aws ec2 describe-instances >> resourceTracker
+
+# AWS IAM users listing
+echo "Print list IAM Users"
+aws iam list-users >> resourceTracker
+
+# AWS LAMBDA users listing
+echo "Print list of Lambda Users"
+aws lambda list-functions >> resourceTracker
+
+####################################################################################################
+
+output
