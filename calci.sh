@@ -2,4 +2,5 @@
 #
 #it is a sample calculator
 a = b+c
-b=d+a 
+b=d+a
+a = b/c
